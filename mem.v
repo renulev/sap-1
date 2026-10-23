@@ -1,6 +1,6 @@
 module mem(input clk, input rst, input load, input[7:0] bus, output[7:0] out);
 	initial begin
-		$readmemh("program.bin", ram);
+		$readmemh("program.hex", ram);
 	end
 	reg[3:0] mar;
 	reg[7:0] ram[0:15];

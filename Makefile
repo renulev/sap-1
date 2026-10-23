@@ -3,8 +3,8 @@ all: run
 run: sim
 	vvp sim
 
-sim: a.v alu.v b.v clock.v cu.v ir.v mem.v pc.v tb.v
-	iverilog -o sim a.v alu.v b.v clock.v cu.v ir.v mem.v pc.v tb.v
+sim: a.v alu.v b.v clock.v cu.v ir.v mem.v pc.v tb.v core.v
+	iverilog -o sim a.v alu.v b.v clock.v cu.v ir.v mem.v pc.v tb.v core.v
 
 wave: run
 	gtkwave tb.out.vcd
