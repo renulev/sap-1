@@ -4,7 +4,7 @@ module tb();
 	integer i;
 
 	initial begin
-		$dumpfile("tb.out.vcd");
+		$dumpfile("tb.vcd");
 		$dumpvars(0, tb);
 		rst = 1;
 		#1 rst = 0;
